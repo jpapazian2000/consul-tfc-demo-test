@@ -16,7 +16,7 @@ data "google_container_engine_versions" "supported" {
 }
 
 resource "google_container_cluster" "gke_cluster" {
-    name = var.gke_cluster_name
+    name = var.cluster_name
     location = local.google_zone
     min_master_version = data.google_container_engine_versions.supported.latest_master_version
     initial_node_count = var.workers_count
