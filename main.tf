@@ -1,3 +1,4 @@
+/*
 terraform {
     required_providers {
       google {
@@ -14,6 +15,7 @@ terraform {
       }
     }
 }
+*/
 
 module "gke_cluster" {
     source = "./gke_cluster"
