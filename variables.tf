@@ -10,7 +10,7 @@ variable "workers_count" {
   default = "3"
 }
 
-variable "cluster_name" {
+variable "gke_cluster_name" {
     description = "name of the cluster"
 }
 
