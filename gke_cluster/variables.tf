@@ -6,10 +6,6 @@ variable "region" {
     default = "europe-west1"
 }
 
-variable "gke_cluster_name" {
-    description = "name of the cluster"
-}
-
 variable "network" {
     description = "network for the vpc"
 }
