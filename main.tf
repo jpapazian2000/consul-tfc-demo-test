@@ -25,7 +25,6 @@ module "gke_cluster" {
     source = "./gke_cluster"
     network    = google_compute_network.gke-vpc.name
     subnetwork = google_compute_subnetwork.subnet.name
-    cluster_name = var.gke_cluster_name
 
 }
 /*
