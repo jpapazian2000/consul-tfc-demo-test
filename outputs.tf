@@ -19,7 +19,8 @@ output "cluster_primary_endpoint" {
 output "certificate" {
     value = google_container_cluster.gke_cluster.master_auth.0.cluster_ca_certificate
 }
-
+/*
 output "namespace" {
     value = kubernetes_namespace.consul.metadata[0].name
 }
+*/

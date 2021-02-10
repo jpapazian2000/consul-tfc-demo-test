@@ -2,6 +2,10 @@ variable "kubernetes_version" {
   default = "1.18"
 }
 
+variable "gke_cluster_name" {
+    description = "name of the cluster"
+}
+
 variable "region" {
     default = "europe-west1"
 }
