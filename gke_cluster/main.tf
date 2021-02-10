@@ -1,7 +1,3 @@
-provider "google" {
-  project = "jpapazian-terraform-consul-gke"
-  region  = var.region
-}
 /*
 data "google_service_account" "owner" {
     account_id = var.service_account

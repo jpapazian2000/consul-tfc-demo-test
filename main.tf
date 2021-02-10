@@ -1,3 +1,7 @@
+provider "google" {
+  project = "jpapazian-terraform-consul-gke"
+  region  = var.region
+}
 /*
 terraform {
     required_providers {
