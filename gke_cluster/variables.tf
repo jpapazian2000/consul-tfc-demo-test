@@ -10,10 +10,6 @@ variable "gke_cluster_name" {
     description = "name of the cluster"
 }
 
-variable "project" {
-    description = "google project"
-}
-
 variable "network" {
     description = "network for the vpc"
 }
@@ -24,10 +20,6 @@ variable "subnetwork" {
 
 variable "workers_count" {
   default = "3"
-}
-
-variable "cluster_name" {
-  type = string
 }
 
 locals {
