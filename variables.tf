@@ -17,3 +17,9 @@ variable "gke_cluster_name" {
 variable "region" {
     description = "region of google"
 }
+
+variable "consul_namespace" {
+    type = string
+    description = "consul namespace"
+
+}

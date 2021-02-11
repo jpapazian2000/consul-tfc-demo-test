@@ -33,5 +33,6 @@ module "kubernetes_config" {
     source = "./k8s_conf"
     cluster_endpoint = module.gke_cluster.cluster_primary_endpoint
     cluster_ca_cert = module.gke_cluster.certificate
+    k8s_ns = var.consul_namespace
 
 }

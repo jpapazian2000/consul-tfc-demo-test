@@ -10,7 +10,7 @@ provider "kubernetes" {
 
 resource "kubernetes_namespace" "consul_ns" {
     metadata {
-      name = "consul-ns"
+      name = var.k8s_ns
     }
 }
 
