@@ -10,13 +10,13 @@ provider "kubernetes" {
 
 resource "kubernetes_namespace" "consul_ns" {
     metadata {
-      name = "consul_ns"
+      name = "consul-ns"
     }
 }
 
 resource "kubernetes_deployment" "consul_depl"{
     metadata {
-        name = "consul_depl"
+        name = "consul-depl"
         namespace = kubernetes_namespace.consul_ns.metadata.0.name
     }
     spec {
