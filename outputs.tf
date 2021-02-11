@@ -2,7 +2,7 @@ output "cluster_name" {
     value = module.gke_cluster.cluster_name
 }
 
-output "ip du cluster kubernetes" {
+output "kubernetes_cluster_ip" {
     value = module.gke_cluster.cluster_primary_endpoint
 }
 /*
