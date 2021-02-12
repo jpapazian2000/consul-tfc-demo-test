@@ -11,19 +11,5 @@ resource "helm_release" "consul" {
     chart = "consul"
     namespace = kubernetes_namespace.consul_ns.metadata.0.name
 
-  set {
-    name  = "global.name"
-    value = "consul"
-  }
-
-  set {
-    name  = "server.replicas"
-    value = "2"
-  }
-
-  set {
-    name  = "server.bootstrapExpect"
-    value = "2"
-  }
 }
 
