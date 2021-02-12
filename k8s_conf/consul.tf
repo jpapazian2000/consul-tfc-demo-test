@@ -7,7 +7,8 @@ resource "kubernetes_namespace" "consul_ns" {
 resource "helm_release" "consul" {
     depends_on = [ kubernetes_namespace.consul_ns ]
     name = "gke-consul"
-    chart = "https://helm.releases.hashicorp.com/consul"
+    repository = "https://helm.releases.hashicorp.com/consul-helm.git"
+    chart = "consul-helm"
     namespace = kubernetes_namespace.consul_ns.metadata.0.name
 
   set {
