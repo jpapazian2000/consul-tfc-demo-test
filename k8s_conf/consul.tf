@@ -12,5 +12,10 @@ resource "helm_release" "consul" {
     namespace = kubernetes_namespace.consul_ns.metadata.0.name
     verify = false
 
+    set {
+      name = "ui.service.type"
+      value = "LoadBalancer"
+    }
+
 }
 
