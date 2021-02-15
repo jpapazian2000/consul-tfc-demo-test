@@ -10,6 +10,8 @@ resource "helm_release" "consul" {
     repository = "${path.module}/consul-helm"
     chart = "consul"
     namespace = kubernetes_namespace.consul_ns.metadata.0.name
+    debug = true
+    verify = true
 
 }
 
