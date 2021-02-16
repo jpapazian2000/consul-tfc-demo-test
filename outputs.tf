@@ -10,6 +10,8 @@ output "namespace" {
     value = kubernetes_namespace.consul.metadata[0].name
 }
 */
+/*
 output "consul-service" {
     value = module.kubernetes_config.ui-service
 }
+*/
