@@ -11,5 +11,5 @@ output "namespace" {
 }
 */
 output "consul-service" {
-    value = module.kubernetes_config.ui_service
+    value = module.kubernetes_config.ui-service
 }
