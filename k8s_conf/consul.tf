@@ -31,7 +31,7 @@ data "kubernetes_service" "consul-ui" {
     time_sleep.wait_60s
   ]
   metadata {
-    name = "consul-ui"
+    name = "gke-consul-consul-ui"
     namespace = kubernetes_namespace.consul_ns.metadata.0.name
   }
 }
